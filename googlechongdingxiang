@@ -1,0 +1,10 @@
+#!name=📁  Google重定向
+#!desc=将google.cn/google.com.hk重定向回google.com
+# 注：需关闭当前Google网页并重启浏览器。
+
+[URL Rewrite]
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+^https?:\/\/(www.)?(g|google)\.com.hk https://www.google.com 302
+
+[MITM]
+hostname = %APPEND% *.google.cn, *.google.com.hk
