@@ -1,0 +1,13 @@
+#!name=🔗 联通流量查询
+#!desc= 
+
+
+
+[Script]
+联通余量(v3) = type=cron,cronexp=*/60 * * * *,timeout=30,script-path=https://raw.githubusercontent.com/xream/scripts/main/surge/modules/10010v3/10010.js
+
+联通余量(v3)接口 = type=http-request,pattern=^https?:\/\/10010\.json,script-path=https://raw.githubusercontent.com/xream/scripts/main/surge/modules/10010v3/10010.js,requires-body=true,max-size=0,timeout=30
+
+[MITM]
+hostname = %APPEND% 10010.json
+Give feedback
