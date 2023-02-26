@@ -1,0 +1,10 @@
+#!name=📁  阿里云盘CK
+#!desc= 
+
+[Script]
+# 安装后打开：https://auth.aliyundrive.com/v2/account/token 获取token
+# 添加boxjs订阅： https://raw.githubusercontent.com/lowking/Scripts/master/lowking.boxjs.json
+阿里云盘签到cookie = requires-body=1,type=http-response,pattern=https:\/\/auth.aliyundrive.com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+
+[MITM]
+hostname = %APPEND% auth.aliyundrive.com
