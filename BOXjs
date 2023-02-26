@@ -1,5 +1,5 @@
 #!name=📁  Boxjs
-#!desc= 
+#!desc=   
 
 [General]
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
