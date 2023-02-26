@@ -1,0 +1,11 @@
+#!name=📁  Tun Only模式
+#!desc= 
+#启用 Tun Only 模式，强制 80 端口流量使用 HTTP 引擎处理并打开解密 TCP 流量
+#!system=ios
+
+[General]
+compatibility-mode = 3
+force-http-engine-hosts = %APPEND% -<ip-address>, *
+
+[MITM]
+tcp-connection = true
